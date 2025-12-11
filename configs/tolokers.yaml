@@ -1,0 +1,17 @@
+gcn:
+  normalize_data: 'No'
+  lr: 0.005
+  weight_decay: 0.0
+  dropout: 0.2
+  add_edge: 1
+
+gprgnn:
+  normalize_data: 'No'
+  lr: 0.005
+  alpha: 1
+  weight_decay: 0.0
+  dprate: 0.2
+  K: 20
+  hidden: 256
+  RPMAX: 10
+  add_edge: 1

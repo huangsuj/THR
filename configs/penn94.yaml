@@ -1,0 +1,15 @@
+gcn:
+  weight_decay: 0.00000005
+  normalize_data: 'No'
+  lr: 0.001
+  RPMAX: 5
+  add_edge: 1
+
+gprgnn:
+  normalize_data: 'No'
+  lr: 0.01
+  alpha: 0.9
+  weight_decay: 0.0001
+  dprate: 0.2
+  RPMAX: 5
+  add_edge: 1

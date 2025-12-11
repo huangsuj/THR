@@ -1,0 +1,14 @@
+gcn:
+  normalize_data: 'Yes'
+  lr: 0.05
+  add_edge: 10
+  hidden: 512
+
+gprgnn:
+  normalize_data: 'Yes'
+  lr: 0.05
+  alpha: 0.9
+  add_edge: 10
+  hidden: 512
+  dropout: 0.5
+  weight_decay: 0.0005

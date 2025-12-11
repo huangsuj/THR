@@ -1,0 +1,22 @@
+gcn:
+  normalize_data: 'No'
+  lr: 0.01
+  weight_decay: 0.005
+  hidden: 32
+  dropout: 0.3
+  add_edge: 1
+  early_stop_loss: acc
+  early_stop: False
+  epochs: 300
+
+gprgnn:
+  normalize_data: 'No'
+  lr: 0.05
+  weight_decay: 0.1
+  hidden: 32
+  dropout: 0.5
+  add_edge: 1
+  early_stop_loss: acc
+  early_stop: False
+  epochs: 300
+  alpha: 0.9

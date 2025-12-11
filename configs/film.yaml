@@ -1,0 +1,14 @@
+gcn:
+  normalize_data: 'No'
+  early_stop_loss: 'acc'
+  weight_decay: 0.0005
+  hidden: 512
+  add_edge: 2
+
+gprgnn:
+  normalize_data: 'Yes'
+  alpha: 0.9
+  weight_decay: 0.0
+  hidden: 512
+  add_edge: 2
+
