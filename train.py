@@ -185,7 +185,7 @@ if __name__ == '__main__':
     # Hyperparameters for training
     parser.add_argument('--net', type=str,
                         choices=['GCN', 'GPRGNN'],
-                        default='GPRGNN', help="Choose the GNN model to train")
+                        default='GCN', help="Choose the GNN model to train")
     parser.add_argument('--epochs', type=int, default=10000,
                         help="Number of epochs to train (early stopping might change this")
     parser.add_argument('--lr', type=float, default=0.01, help="Learning rate for training 0.01")
@@ -240,7 +240,7 @@ if __name__ == '__main__':
     parser.add_argument('--device', type=str, default='cuda:0')
 
     args = parser.parse_args()
-    Graph_dataset = ['cornell']
+    Graph_dataset = ['citeseer']
     args.use_yaml = True if args.use_yaml == "Yes" else False
 
     for index, item in enumerate(Graph_dataset):
@@ -325,3 +325,4 @@ if __name__ == '__main__':
             f'val acc mean = {val_acc_mean:.4f} \t val acc std = {val_acc_std:.4f}')
         print(
             f'test acc mean = {test_acc_mean:.4f} \t test acc std = {test_acc_std:.4f} ')
+
