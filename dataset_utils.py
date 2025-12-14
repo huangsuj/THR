@@ -177,12 +177,12 @@ def DataLoader(name, normalize_data):
             dataset = Actor(root='../data/film')
     elif name in ['texas', 'cornell', 'wisconsin']:
         if normalize_data:
-            dataset = WebKB(root="C:\\Users\\hsj\\OneDrive\\my_paper\\THR\\ICLR2026\\data\\",
+            dataset = WebKB(root="../data/",
                             name=name, transform=T.NormalizeFeatures())
         else:
             dataset = WebKB(root='../data/', name=name)
     elif name == 'penn94':
-        dataset = LINKXDataset(root='C:\\Users\\hsj\\OneDrive\\my_paper\\THR\\ICLR2026\\data\\', name='penn94')
+        dataset = LINKXDataset(root='../data/', name='penn94')
         from torch_geometric.transforms import RandomNodeSplit
         transform2 = RandomNodeSplit(split="train_rest", num_splits=5, num_test=0.2, num_val=0.32)
         data = transform2(dataset[0])
