@@ -1,5 +1,11 @@
 gprgnn:
   normalize_data: 'Yes'
-  add_edge: 10
-  hidden: 64
-  weight_decay: 0.0
+  lr: 0.005
+  weight_decay: 0.001
+  dropout: 0.5
+  hidden: 128
+  add_edge: 3
+  beta: 0.5
+  early_stopping: 100
+  early_stop_loss: acc
+  alpha: 0.1
