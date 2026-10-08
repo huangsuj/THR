@@ -1,0 +1,7 @@
+
+gprgnn:
+  normalize_data: 'Yes'
+  alpha: 0.9
+  weight_decay: 0.0
+  hidden: 512
+  add_edge: 2

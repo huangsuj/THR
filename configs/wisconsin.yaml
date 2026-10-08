@@ -1,0 +1,8 @@
+gprgnn:
+  normalize_data: 'Yes'
+  lr: 0.05
+  alpha: 1.0
+  add_edge: 5
+  dropout: 0.0
+  hidden: 512
+
